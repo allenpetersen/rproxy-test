@@ -1,0 +1,10 @@
+localhost:8080 {
+	proxy /i_ localhost:8888 {
+		without /i_
+		transparent
+	}
+
+	proxy / localhost:3000 {
+		transparent
+	}
+}
